@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: RipaEx
-x-complete: 1
+x-complete: 0
 info:
-  title: RIPA Node Documentation
-  description: this-is-a-documentation-for-ripanodehttpsgithub-comripaexripanode-built-with-swagger-ui-to-make-testing-a-breeze--if-you-find-any-issues-come-over-to-ripaexripanodetestapihttpsgithub-comripaexripanodetestapi-to-open-an-issue-or-even-better-send-a-pr-that-fixes-the-issue-the-community-ssl-public-api-used-as-test-host-is-provided-from-ripaex-iohttpswww-ripaex-io-
+  title: RipaEx Peer Transactions
+  description: .
   version: 1.0.0
 host: api.ripaex.io
 basePath: /
@@ -977,66 +978,17 @@ paths:
       - Blockchain
       - Peer
       - Transactions
-    post:
-      summary: Peer Transactions
-      description: Create a new transaction.
-      operationId: transport.addTransactions
-      x-api-path-slug: peertransactions-post
-      parameters:
-      - in: body
-        name: transactions
-        description: A valid transaction object
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blockchain
-      - Peer
-      - Transactions
-  /peer/transactionsFromIds:
-    get:
-      summary: Peer Transactions From Ids
-      description: Get a list of transactions by ids.
-      operationId: transport.transactionsFromIds
-      x-api-path-slug: peertransactionsfromids-get
-      parameters:
-      - in: query
-        name: ids
-        description: A list of transaction IDs
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blockchain
-      - Peer
-      - Transactions
-      - From
-      - Ids
-  /peer/height:
-    get:
-      summary: Peer Height
-      description: Get the blockchain height.
-      operationId: transport.height
-      x-api-path-slug: peerheight-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blockchain
-      - Peer
-      - Height
-  /peer/status:
-    get:
-      summary: Peer Status
-      description: Get the blockchain status.
-      operationId: transport.status
-      x-api-path-slug: peerstatus-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blockchain
-      - Peer
-      - Status
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

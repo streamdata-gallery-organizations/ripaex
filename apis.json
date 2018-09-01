@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - RipaEx",
+	"description": "This is a repository of ripaex APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/ripaex.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-31",
+	"url": "http://ripaex.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "RipaEx",
+			"x-api-slug": "ripaex",
+			"description": "Ripa Exchange is an hybrid-decentralized exchange with a strong focus on lowering the entry level for opening new exchanges and giving crypto traders safe and secure trading partners to operate on a daily basis.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28880-ripaex-io.jpg",
+			"humanURL": "http://www.ripaex.io",
+			"baseURL": "https://api.ripaex.io//",
+			"tags": "RipaEx",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/ripaex/master/_listings/ripaex/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "RipaEx",
+	"include": [
+		{
+			"name": "RipaEx",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/ripaex/master/_listings/ripaex/apis.yaml"
+		}
+	]
+}
